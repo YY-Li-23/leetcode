@@ -7,7 +7,7 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         t=head
         while t and t.next:
-            if t.val==t.next.val:
+            if t.val==t.next.val: # t.nex: points to the second number/position
                 t.next=t.next.next   # skip over the duplicate node and make t.next point to the 2 directly.
             else:
                 t=t.next
