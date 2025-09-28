@@ -4,7 +4,7 @@ class Solution:
         max_profit = 0            
 
         for p in prices:
-            if p < min_price:      
+            if p < min_price:         #O(n)
                 min_price = p
             profit = p - min_price 
             if profit > max_profit:
